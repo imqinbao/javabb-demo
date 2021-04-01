@@ -1,4 +1,4 @@
-package cn.javabb.mq.ptp;
+package cn.javabb.mq.queue;
 
 /**
  * @desc:
@@ -17,7 +17,9 @@ public class TestProductor {
             e.printStackTrace();
         }
         //new Thread()
-
+        new Thread(testProductor.new ProductorMq(producter)).start();
+        new Thread(testProductor.new ProductorMq(producter)).start();
+        new Thread(testProductor.new ProductorMq(producter)).start();
     }
 
     class ProductorMq implements Runnable {
