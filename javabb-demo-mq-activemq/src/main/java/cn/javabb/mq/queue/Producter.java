@@ -13,9 +13,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Producter {
     //连接信息
-    private static final String USERNAME= ActiveMQConnection.DEFAULT_USER;
-    private static final String PASSWORD=ActiveMQConnection.DEFAULT_PASSWORD;
-    private static final String BROKER_URL=ActiveMQConnection.DEFAULT_BROKER_URL;
+    private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
+    private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
+    private static final String BROKER_URL = ActiveMQConnection.DEFAULT_BROKER_URL;
     //提供原子操作的Integer 提供安全操作+- 适合并发系统
     AtomicInteger count = new AtomicInteger(0);
     // 链接工厂
@@ -30,7 +30,7 @@ public class Producter {
     public void init() {
 
         try {
-            System.out.println(USERNAME+","+PASSWORD+","+BROKER_URL);
+            System.out.println(USERNAME + "," + PASSWORD + "," + BROKER_URL);
             // 创建链接工厂
             connectionFactory = new ActiveMQConnectionFactory(USERNAME, PASSWORD, BROKER_URL);
             // 从工厂中创建一个链接
@@ -49,19 +49,19 @@ public class Producter {
         try {
             Queue queue = session.createQueue(disname);
             MessageProducer messageProducer = null;
-            if(threadLocal.get() != null) {
+            if (threadLocal.get() != null) {
                 System.out.println("当前threadLocal不为空");
                 messageProducer = threadLocal.get();
-            }else {
+            } else {
                 messageProducer = session.createProducer(queue);
                 threadLocal.set(messageProducer);
             }
-            while(true) {
+            while (true) {
                 Thread.sleep(1000);
                 int num = count.getAndIncrement();
                 //创建一条消息
-                TextMessage msg = session.createTextMessage(Thread.currentThread().getName()+"productor:我正在生产东西！，count:"+num);
-                System.out.println(Thread.currentThread().getName()+"productor:我正在生产东西！，count:"+num);
+                TextMessage msg = session.createTextMessage(Thread.currentThread().getName() + "productor:我正在生产东西！，count:" + num);
+                System.out.println(Thread.currentThread().getName() + "productor:我正在生产东西！，count:" + num);
                 messageProducer.send(msg);
                 session.commit();
             }

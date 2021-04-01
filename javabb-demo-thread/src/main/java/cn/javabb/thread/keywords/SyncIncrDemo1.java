@@ -5,16 +5,17 @@ package cn.javabb.thread.keywords;
  * @author: javabb (javabob(a)163.com)
  * @create: 2020/09/26 18:42
  */
-public class SyncIncrDemo1 implements Runnable{
+public class SyncIncrDemo1 implements Runnable {
     // 共享资源（临界资源）
     static int i = 0;
+
     //锁对象 this (new出来的实例对象)
-    public synchronized void reduce(){
+    public synchronized void reduce() {
         i--;
     }
 
     //锁对象 class (SyncIncrDemo1.class)
-    public static  synchronized void incr() {
+    public static synchronized void incr() {
         i++;
     }
 

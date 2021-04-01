@@ -5,13 +5,13 @@ package cn.javabb.thread.keywords;
  * @author: javabb (javabob(a)163.com)
  * @create: 2020/09/26 18:42
  */
-public class SyncIncrDemo2 implements Runnable{
+public class SyncIncrDemo2 implements Runnable {
     // 共享资源（临界资源）
     static int i = 0;
 
-    public void method1(){
+    public void method1() {
         //省略1w行代码
-        synchronized (SyncIncrDemo2.class){
+        synchronized (SyncIncrDemo2.class) {
             i++;
         }
         //省略2w行代码
@@ -19,7 +19,7 @@ public class SyncIncrDemo2 implements Runnable{
 
     @Override
     public void run() {
-          method1();
+        method1();
     }
 
     public static void main(String[] args) throws InterruptedException {

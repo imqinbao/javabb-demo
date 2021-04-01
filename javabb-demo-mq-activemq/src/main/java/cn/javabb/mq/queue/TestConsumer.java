@@ -15,15 +15,17 @@ public class TestConsumer {
         new Thread(testConsumer.new ConsumerMq(comsumer)).start();
         new Thread(testConsumer.new ConsumerMq(comsumer)).start();
     }
-    class ConsumerMq implements Runnable{
+
+    class ConsumerMq implements Runnable {
         Comsumer comsumer;
-        public ConsumerMq(Comsumer comsumer){
+
+        public ConsumerMq(Comsumer comsumer) {
             this.comsumer = comsumer;
         }
 
         @Override
         public void run() {
-            while(true){
+            while (true) {
                 try {
                     comsumer.getMessage("javabb-demo-activemq");
                     Thread.sleep(10000);

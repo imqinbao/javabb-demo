@@ -6,6 +6,7 @@ package cn.javabb.thread;
  * 创建Thread的子类的对象
  * 调用此对象的start():启动线程 调用当前线程的run()方法
  * 注意：线程只能启动一次，不能再次调用，就是再调用线程的run方法也只有一个线程
+ *
  * @desc:
  * @author: javabb (javabob(a)163.com)
  * @create: 2020/09/16 22:32

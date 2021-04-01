@@ -13,9 +13,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Comsumer {
     //连接信息
-    private static final String USERNAME= ActiveMQConnection.DEFAULT_USER;
-    private static final String PASSWORD=ActiveMQConnection.DEFAULT_PASSWORD;
-    private static final String BROKER_URL=ActiveMQConnection.DEFAULT_BROKER_URL;
+    private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
+    private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
+    private static final String BROKER_URL = ActiveMQConnection.DEFAULT_BROKER_URL;
     //提供原子操作的Integer 提供安全操作+- 适合并发系统
     AtomicInteger count = new AtomicInteger(0);
     // 链接工厂
@@ -43,24 +43,25 @@ public class Comsumer {
             e.printStackTrace();
         }
     }
+
     public void getMessage(String disname) {
         try {
             Queue queue = session.createQueue(disname);
             MessageConsumer consumer = null;
-            if(threadLocal.get()!=null) {
+            if (threadLocal.get() != null) {
                 consumer = threadLocal.get();
-            }else {
+            } else {
                 consumer = session.createConsumer(queue);
                 threadLocal.set(consumer);
             }
 
-            while(true) {
+            while (true) {
                 Thread.sleep(1000);
                 TextMessage msg = (TextMessage) consumer.receive();
-                if(msg != null) {
+                if (msg != null) {
                     msg.acknowledge();
-                    System.out.println(Thread.currentThread().getName()+": Consumer:我是消费者，我正在消费Msg:"+msg.getText()+"--->"+count.getAndIncrement());
-                }else {
+                    System.out.println(Thread.currentThread().getName() + ": Consumer:我是消费者，我正在消费Msg:" + msg.getText() + "--->" + count.getAndIncrement());
+                } else {
                     break;
                 }
             }

@@ -1,13 +1,11 @@
 package cn.javabb.thread.keywords;
 
-import com.sun.corba.se.impl.orbutil.concurrent.Sync;
-
 /**
  * @desc: 修饰实例成员方法
  * @author: javabb (javabob(a)163.com)
  * @create: 2020/09/26 18:42
  */
-public class SyncIncrDemo implements Runnable{
+public class SyncIncrDemo implements Runnable {
     // 共享资源（临界资源）
     static int i = 0;
 

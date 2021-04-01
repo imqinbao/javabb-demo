@@ -1,7 +1,6 @@
 package cn.javabb.thread;
 
 /**
- *
  * @desc:
  * @author: javabb (javabob(a)163.com)
  * @create: 2020/09/16 23:52

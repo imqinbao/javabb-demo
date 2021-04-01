@@ -17,9 +17,10 @@ public class StreamTest {
     public List<String> newList() {
         return Arrays.asList("a1", "b2", "c1", "c2", "d5");
     }
+
     // 试试水
     @Test
-    public void test1(){
+    public void test1() {
         newList().stream().filter(s -> s.startsWith("c")) // 数据过滤
                 .map(String::toUpperCase) //转换大小写
                 .sorted() //排序
@@ -32,12 +33,12 @@ public class StreamTest {
         // 找到第一个流
         newList().stream().findFirst().ifPresent(System.out::println);
         // Stream.of()直接创建流
-        Stream.of("a1","a2","b3").findFirst().ifPresent(System.out::println);
+        Stream.of("a1", "a2", "b3").findFirst().ifPresent(System.out::println);
 
         // 其他原始数据类型的流 IntStream,LongSteam,DoubleStream
-        IntStream.of(1,2,3).forEach(System.out::println);
+        IntStream.of(1, 2, 3).forEach(System.out::println);
         //上面的等同于  下面range的用法相当于 for(int i=1;i<4;i++){}
-        IntStream.range(1,4).forEach(System.out::println);
+        IntStream.range(1, 4).forEach(System.out::println);
     }
 
 }

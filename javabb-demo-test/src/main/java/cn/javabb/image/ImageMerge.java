@@ -1,7 +1,6 @@
 package cn.javabb.image;
 
 import net.coobird.thumbnailator.Thumbnailator;
-import net.coobird.thumbnailator.Thumbnails;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -16,11 +15,9 @@ import java.io.IOException;
  */
 public class ImageMerge {
     /**
-     * @param fileUrl
-     *            文件绝对路径或相对路径
+     * @param fileUrl 文件绝对路径或相对路径
      * @return 读取到的缓存图像
-     * @throws IOException
-     *             路径错误或者不存在该文件时抛出IO异常
+     * @throws IOException 路径错误或者不存在该文件时抛出IO异常
      */
     public static BufferedImage getBufferedImage(String fileUrl)
             throws IOException {
@@ -32,16 +29,14 @@ public class ImageMerge {
     /**
      * 输出图片
      *
-     * @param buffImg
-     *            图像拼接叠加之后的BufferedImage对象
-     * @param savePath
-     *            图像拼接叠加之后的保存路径
+     * @param buffImg  图像拼接叠加之后的BufferedImage对象
+     * @param savePath 图像拼接叠加之后的保存路径
      */
     public static void generateSaveFile(BufferedImage buffImg, String savePath) {
         int temp = savePath.lastIndexOf(".") + 1;
         try {
             File outFile = new File(savePath);
-            if(!outFile.exists()){
+            if (!outFile.exists()) {
                 outFile.createNewFile();
             }
             ImageIO.write(buffImg, savePath.substring(temp), outFile);
@@ -52,21 +47,15 @@ public class ImageMerge {
     }
 
     /**
-     *
-     * @Title: 构造图片
-     * @Description: 生成水印并返回java.awt.image.BufferedImage
-     * @param buffImg
-     *            源文件(BufferedImage)
-     * @param waterFile
-     *            水印文件(BufferedImage)
-     * @param x
-     *            距离右下角的X偏移量
-     * @param y
-     *            距离右下角的Y偏移量
-     * @param alpha
-     *            透明度, 选择值从0.0~1.0: 完全透明~完全不透明
+     * @param buffImg   源文件(BufferedImage)
+     * @param waterFile 水印文件(BufferedImage)
+     * @param x         距离右下角的X偏移量
+     * @param y         距离右下角的Y偏移量
+     * @param alpha     透明度, 选择值从0.0~1.0: 完全透明~完全不透明
      * @return BufferedImage
      * @throws IOException
+     * @Title: 构造图片
+     * @Description: 生成水印并返回java.awt.image.BufferedImage
      */
     public static BufferedImage overlyingImage(BufferedImage buffImg, BufferedImage waterImg, int x, int y, float alpha) throws IOException {
 
@@ -87,12 +76,9 @@ public class ImageMerge {
      * 待合并的两张图必须满足这样的前提，如果水平方向合并，则高度必须相等；如果是垂直方向合并，宽度必须相等。
      * mergeImage方法不做判断，自己判断。
      *
-     * @param img1
-     *            待合并的第一张图
-     * @param img2
-     *            带合并的第二张图
-     * @param isHorizontal
-     *            为true时表示水平方向合并，为false时表示垂直方向合并
+     * @param img1         待合并的第一张图
+     * @param img2         带合并的第二张图
+     * @param isHorizontal 为true时表示水平方向合并，为false时表示垂直方向合并
      * @return 返回合并后的BufferedImage对象
      * @throws IOException
      */
@@ -112,7 +98,7 @@ public class ImageMerge {
         // 生成新图片
         BufferedImage DestImage = null;
         if (isHorizontal) { // 水平方向合并
-            DestImage = new BufferedImage(w1+w2, h1, BufferedImage.TYPE_INT_RGB);
+            DestImage = new BufferedImage(w1 + w2, h1, BufferedImage.TYPE_INT_RGB);
             DestImage.setRGB(0, 0, w1, h1, ImageArrayOne, 0, w1); // 设置上半部分或左半部分的RGB
             DestImage.setRGB(w1, 0, w2, h2, ImageArrayTwo, 0, w2);
         } else { // 垂直方向合并
@@ -161,7 +147,7 @@ public class ImageMerge {
         try {
             // 读取待合并的文件
             BufferedImage bi1 = Thumbnailator.createThumbnail(new File(saveFilePath), 400, 300);
-            BufferedImage bi2 =  Thumbnailator.createThumbnail(new File(divingPath), 400, 300);
+            BufferedImage bi2 = Thumbnailator.createThumbnail(new File(divingPath), 400, 300);
             // 调用mergeImage方法获得合并后的图像
             destImg = mergeImage(bi1, bi2, true);
         } catch (IOException e) {

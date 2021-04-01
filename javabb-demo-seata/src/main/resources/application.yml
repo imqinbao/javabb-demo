@@ -1,0 +1,86 @@
+# Tomcat
+server:
+  port: 9003
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: javaitem-demo-seata
+  profiles:
+    # 环境配置
+    active: dev
+  redis:
+    host: localhost
+    port: 6379
+    password:
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+      seata: true    #开启seata代理，开启后默认每个数据源都代理，如果某个不需要代理可单独关闭
+      seata-mode: AT #支持XA及AT模式,默认AT
+      datasource:
+        # 主库数据源
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://59.110.236.115:3306/javaitem-cloud?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          username: root
+          password: mima123
+          seata: false
+        # seata_order数据源
+        order:
+          username: root
+          password: mima123
+          url: jdbc:mysql://59.110.236.115:3306/seata_order?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        # seata_account数据源
+        account:
+          username: root
+          password: mima123
+          url: jdbc:mysql://59.110.236.115:3306/seata_account?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        # seata_product数据源
+        product:
+          username: root
+          password: mima123
+          url: jdbc:mysql://59.110.236.115:3306/seata_product?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+
+# seata配置
+seata:
+  enabled: true
+  application-id: applicationName
+  tx-service-group: my_test_tx_group
+  #一定要是false
+  enable-auto-data-source-proxy: false
+  service:
+    vgroup-mapping:
+      #key与上面的tx-service-group的值对应
+      my_test_tx_group: default
+    grouplist:
+      #seata-server地址仅file注册中心需要
+      default: localhost:8091
+  config:
+    type: file
+  registry:
+    type: file
+
+# Mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:cn/javabb/**/*Mapper.xml
+  typeAliasesPackage: cn.javabb.**.entity
+  global-config:
+    id-type: 0
+    field-strategy: 1
+    db-column-underline: true
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+# swagger配置
+swagger:
+  title: seate-demo
+  license: Powered By javabb
+  licenseUrl: http://javabb.cn

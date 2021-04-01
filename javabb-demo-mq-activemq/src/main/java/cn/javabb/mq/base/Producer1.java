@@ -25,8 +25,7 @@ public class Producer1 {
         createConnection.start();
         // 创建会话工厂 第一个参数控制事务,第二个参数控制消息
         // AUTO_ACKNOWLEDGE 自动确认模式
-        Session session = createConnection.createSession(false,Session.AUTO_ACKNOWLEDGE);
-
+        Session session = createConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
 
     }
