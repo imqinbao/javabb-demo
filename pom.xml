@@ -13,6 +13,7 @@
         <module>javabb-demo-test</module>
         <module>javabb-demo-seata</module>
         <module>javabb-demo-base</module>
+        <module>javabb-demo-mq</module>
     </modules>
 
     <packaging>pom</packaging>
