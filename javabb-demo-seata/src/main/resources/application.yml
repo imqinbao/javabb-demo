@@ -79,6 +79,7 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: false
 
+logging.level.org.springframework.boot.autoconfigure: error
 # swagger配置
 swagger:
   title: seate-demo

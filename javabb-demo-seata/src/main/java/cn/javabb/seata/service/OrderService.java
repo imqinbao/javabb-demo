@@ -63,7 +63,8 @@ public class OrderService extends ServiceImpl<OrderMapper, Order> {
         Double totalPrice = productService.reduceStock(productId, amount);
         // 扣减余额
         accountService.reduceBalance(userId, totalPrice);
-
+        // 扣减余额
+        accountService.reduceBalance(userId, 100.0);
         order.setStatus(ORDERE_STATUS_SUCCESS);
         order.setTotalPrice(totalPrice);
         orderMapper.updateById(order);
