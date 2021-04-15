@@ -11,6 +11,9 @@ import lombok.Data;
 public class SimpleMessage {
 
     public static final String TOPIC = "Simple-Message";
+    public static final String PRODUCER_GROUP = "Simple-Producer-Group";
+    public static final String CONSUMER_GROUP = "Simple-Consumer-Group";
+    public static final String CONSUMER_GROUP_1 = "Simple-Consumer-1-Group";
     /**
      * 编号
      */

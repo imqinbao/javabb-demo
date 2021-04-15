@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @desc:
@@ -32,6 +32,6 @@ public class SimpleMessageTest {
         SendResult result = simpleProducer.syncSend(id);
         log.info("testSyncSend发送消息:[{}],发送成功,结果为:[{}]",id,result);
         //阻塞等待,保证消费
-        new CountDownLatch(1).await();
+        TimeUnit.SECONDS.sleep(2);
     }
 }

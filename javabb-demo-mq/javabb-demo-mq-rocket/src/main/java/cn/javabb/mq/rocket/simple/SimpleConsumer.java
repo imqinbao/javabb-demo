@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RocketMQMessageListener(
         topic = SimpleMessage.TOPIC,
-        consumerGroup = "simple-consumer-group-" + SimpleMessage.TOPIC
+        consumerGroup = SimpleMessage.CONSUMER_GROUP
 )
 public class SimpleConsumer implements RocketMQListener<SimpleMessage> {
     @Override
