@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>javabb-demo-mq-rocket</module>
+        <module>javabb-demo-mq-activemq</module>
     </modules>
 
 

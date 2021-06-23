@@ -8,12 +8,12 @@
     <artifactId>javabb-demo</artifactId>
     <version>1.0.0</version>
     <modules>
-        <module>javabb-demo-mq-activemq</module>
         <module>javabb-demo-thread</module>
         <module>javabb-demo-test</module>
         <module>javabb-demo-seata</module>
         <module>javabb-demo-base</module>
         <module>javabb-demo-mq</module>
+        <module>javabb-demo-elasticsearch</module>
     </modules>
 
     <packaging>pom</packaging>

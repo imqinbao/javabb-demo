@@ -1,0 +1,7 @@
+spring:
+  es:
+    url: 192.168.50.122
+    scheme: http
+    port: 9200
+    index: person_index
+    type: person_type
