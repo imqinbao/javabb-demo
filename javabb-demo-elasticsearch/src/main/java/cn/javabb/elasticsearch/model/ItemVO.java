@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 /**
@@ -18,6 +19,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Document(indexName = EsConst.INDEX_NAME,type = EsConst.TYPE_NAME)
 public class ItemVO {
     //编号
+    @Id
     private String id;
     // 标题
     private String title;

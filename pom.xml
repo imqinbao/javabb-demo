@@ -14,6 +14,9 @@
         <module>javabb-demo-base</module>
         <module>javabb-demo-mq</module>
         <module>javabb-demo-elasticsearch</module>
+        <module>javabb-demo-easypoi</module>
+        <module>javabb-demo-sharding-jdbc</module>
+        <module>javabb-demo-threadpool</module>
     </modules>
 
     <packaging>pom</packaging>
