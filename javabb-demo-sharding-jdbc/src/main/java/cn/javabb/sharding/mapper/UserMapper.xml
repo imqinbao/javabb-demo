@@ -3,7 +3,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.javabb.sharding.mapper.UserMapper">
 
-    <insert id="save" parameterType="User">
+    <resultMap id="userResultMap" type="cn.javabb.sharding.entity.User">
+        <result property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+    </resultMap>
+
+    <insert id="save" parameterType="cn.javabb.sharding.entity.User">
         INSERT INTO t_user(user_name,sex,address)
         VALUES
         (
@@ -11,7 +18,15 @@
         )
     </insert>
 
-    <select id="get" parameterType="long" resultType="User">
+    <select id="get" parameterType="String" resultMap="userResultMap">
         select * from t_user where id = #{id}
+    </select>
+
+    <select id="getList" parameterType="Integer" resultMap="userResultMap">
+        select * from t_user where sex = #{sex}
+    </select>
+
+    <select id="page" resultMap="userResultMap">
+        select * from t_user where address like concat('%',#{address},'%') limit #{page},#{size}
     </select>
 </mapper>

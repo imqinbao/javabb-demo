@@ -1,6 +1,9 @@
 package cn.javabb.sharding.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * @desc:
@@ -8,9 +11,12 @@ import lombok.Data;
  * @create: 2021/07/04 15:08
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
 public class User {
 
-    private Long id;
+    private String id;
 
     private String userName;
 

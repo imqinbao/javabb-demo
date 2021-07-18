@@ -2,8 +2,10 @@ package cn.javabb.sharding.service;
 
 import cn.javabb.sharding.entity.User;
 import cn.javabb.sharding.mapper.UserMapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @desc:
@@ -11,13 +13,27 @@ import org.springframework.stereotype.Service;
  * @create: 2021/07/04 15:09
  */
 @Service
-public class UserService extends ServiceImpl<UserMapper, User> {
+public class UserService{
+
+    @Autowired
+    UserMapper userMapper;
 
     public boolean save(User user) {
-        return baseMapper.save(user)>0;
+        userMapper.save(user);
+        return true;
     }
 
-    public User get(Long id) {
-        return baseMapper.get(id);
+    public User get(String id) {
+        return userMapper.get(id);
     }
+
+    public List<User> getList(Integer sex) {
+        return userMapper.getList(sex);
+    }
+
+
+    public List<User> page(String address,Integer page,Integer size) {
+        return userMapper.page(address,page*size,size);
+    }
+
 }

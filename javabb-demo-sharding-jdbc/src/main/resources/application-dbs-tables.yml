@@ -1,0 +1,32 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: ds0,ds1
+      ds0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://localhost:3306/demo-sharding-master?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: mima123
+      ds1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://localhost:3306/demo-sharding-slave?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: mima123
+    sharding:
+      default-database-strategy:
+        inline:
+          algorithm-expression: ds$->{id % 2}
+          sharding-column: id
+      tables:
+        t_user:
+          actual-data-nodes: ds$->{0..1}.t_user_$->{0..1}
+          table-strategy:
+            inline:
+              sharding-column: sex
+              algorithm-expression: t_user_$->{sex % 2}
+          key-generator:
+            column: id
+            type: SNOWFLAKE
+      defaultDataSourceName: ds0
+    props:
+      sql.show: true
