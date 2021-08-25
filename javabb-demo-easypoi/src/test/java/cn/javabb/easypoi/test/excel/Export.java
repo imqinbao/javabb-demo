@@ -51,7 +51,7 @@ public class Export {
     }
 
     /**
-     * Map数据导出
+     * Map数据导出到指定文件
      */
     @Test
     public void mapExportTest() {
