@@ -3,3 +3,8 @@
 /javabb-demo-seata/target/
 /javabb-demo-test/target/
 /javabb-demo-thread/target/classes/cn/javabb/thread/
+/javabb-demo-easypoi/target/
+/javabb-demo-elasticsearch/target/
+/javabb-demo-mq/javabb-demo-mq-kafka/target/
+/javabb-demo-sharding-jdbc/target/
+/javabb-demo-threadpool/target/classes/cn/javabb/threadpool/
