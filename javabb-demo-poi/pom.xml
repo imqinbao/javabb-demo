@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>javabb-demo-easypoi</artifactId>
+    <artifactId>javabb-demo-poi</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -22,6 +22,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--easypoi-->
         <dependency>
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-spring-boot-starter</artifactId>

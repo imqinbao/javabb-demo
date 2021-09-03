@@ -1,10 +1,10 @@
-package cn.javabb.easypoi.test.excel;
+package cn.javabb.poi.easypoi.test.excel;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.ExportParams;
 import cn.afterturn.easypoi.excel.entity.params.ExcelExportEntity;
 import cn.hutool.core.collection.CollUtil;
-import cn.javabb.easypoi.model.UserInfo;
+import cn.javabb.poi.easypoi.model.UserInfo;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.junit.Test;
 

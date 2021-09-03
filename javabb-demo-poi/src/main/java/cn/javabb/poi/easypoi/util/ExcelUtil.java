@@ -1,4 +1,4 @@
-package cn.javabb.easypoi.util;
+package cn.javabb.poi.easypoi.util;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.ExcelImportUtil;

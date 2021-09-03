@@ -1,7 +1,7 @@
-package cn.javabb.easypoi.controller;
+package cn.javabb.poi.easypoi.controller;
 
-import cn.javabb.easypoi.model.UserInfo;
-import cn.javabb.easypoi.util.ExcelUtil;
+import cn.javabb.poi.easypoi.model.UserInfo;
+import cn.javabb.poi.easypoi.util.ExcelUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

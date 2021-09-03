@@ -1,4 +1,4 @@
-package cn.javabb.easypoi.model;
+package cn.javabb.poi.easypoi.model;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import lombok.Data;
