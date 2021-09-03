@@ -14,7 +14,7 @@
         <module>javabb-demo-base</module>
         <module>javabb-demo-mq</module>
         <module>javabb-demo-elasticsearch</module>
-        <module>javabb-demo-easypoi</module>
+        <module>javabb-demo-poi</module>
         <module>javabb-demo-sharding-jdbc</module>
         <module>javabb-demo-threadpool</module>
         <module>javabb-demo-docker</module>

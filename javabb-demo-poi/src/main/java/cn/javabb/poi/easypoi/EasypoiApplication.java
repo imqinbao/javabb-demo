@@ -1,4 +1,4 @@
-package cn.javabb.easypoi;
+package cn.javabb.poi.easypoi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
