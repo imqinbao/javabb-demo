@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo.iml" filepath="$PROJECT_DIR$/javabb-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-base.iml" filepath="$PROJECT_DIR$/javabb-demo-base/javabb-demo-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-common/javabb-demo-common.iml" filepath="$PROJECT_DIR$/javabb-demo-base/javabb-demo-common/javabb-demo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-docker/javabb-demo-docker.iml" filepath="$PROJECT_DIR$/javabb-demo-docker/javabb-demo-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-elasticsearch/javabb-demo-elasticsearch.iml" filepath="$PROJECT_DIR$/javabb-demo-elasticsearch/javabb-demo-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq.iml" filepath="$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-activemq/javabb-demo-mq-activemq.iml" filepath="$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-activemq/javabb-demo-mq-activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-kafka/javabb-demo-mq-kafka.iml" filepath="$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-kafka/javabb-demo-mq-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-rocket/javabb-demo-mq-rocket.iml" filepath="$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-rocket/javabb-demo-mq-rocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-poi/javabb-demo-poi.iml" filepath="$PROJECT_DIR$/javabb-demo-poi/javabb-demo-poi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-seata/javabb-demo-seata.iml" filepath="$PROJECT_DIR$/javabb-demo-seata/javabb-demo-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-sharding-jdbc/javabb-demo-sharding-jdbc.iml" filepath="$PROJECT_DIR$/javabb-demo-sharding-jdbc/javabb-demo-sharding-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-swagger/javabb-demo-swagger.iml" filepath="$PROJECT_DIR$/javabb-demo-base/javabb-demo-swagger/javabb-demo-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-test/javabb-demo-test.iml" filepath="$PROJECT_DIR$/javabb-demo-test/javabb-demo-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-thread/javabb-demo-thread.iml" filepath="$PROJECT_DIR$/javabb-demo-thread/javabb-demo-thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabb-demo-threadpool/javabb-demo-threadpool.iml" filepath="$PROJECT_DIR$/javabb-demo-threadpool/javabb-demo-threadpool.iml" />
+    </modules>
+  </component>
+</project>

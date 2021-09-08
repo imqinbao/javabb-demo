@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-base/javabb-demo-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-docker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-docker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-elasticsearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-activemq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-activemq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-rocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-mq/javabb-demo-mq-rocket/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-poi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-poi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-sharding-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-sharding-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-threadpool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javabb-demo-threadpool/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

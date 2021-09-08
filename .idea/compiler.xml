@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="javabb-demo-threadpool" />
+        <module name="javabb-demo-test" />
+        <module name="javabb-demo-sharding-jdbc" />
+        <module name="javabb-demo-mq-kafka" />
+        <module name="javabb-demo-elasticsearch" />
+        <module name="javabb-demo-seata" />
+        <module name="javabb-demo-poi" />
+        <module name="javabb-demo-common" />
+        <module name="javabb-demo-docker" />
+        <module name="javabb-demo-thread" />
+        <module name="javabb-demo-swagger" />
+        <module name="javabb-demo-mq-rocket" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="javabb-demo" target="1.8" />
+      <module name="javabb-demo-base" target="1.8" />
+      <module name="javabb-demo-common" target="1.8" />
+      <module name="javabb-demo-docker" target="1.8" />
+      <module name="javabb-demo-elasticsearch" target="1.8" />
+      <module name="javabb-demo-jdk8" target="1.8" />
+      <module name="javabb-demo-mq" target="1.8" />
+      <module name="javabb-demo-mq-activemq" target="1.8" />
+      <module name="javabb-demo-mq-kafka" target="1.8" />
+      <module name="javabb-demo-mq-rocket" target="1.8" />
+      <module name="javabb-demo-poi" target="1.8" />
+      <module name="javabb-demo-seata" target="1.8" />
+      <module name="javabb-demo-sharding-jdbc" target="1.8" />
+      <module name="javabb-demo-swagger" target="1.8" />
+      <module name="javabb-demo-test" target="1.8" />
+      <module name="javabb-demo-thread" target="1.8" />
+      <module name="javabb-demo-threadpool" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="javabb-demo-jdk8" options="" />
+    </option>
+  </component>
+</project>

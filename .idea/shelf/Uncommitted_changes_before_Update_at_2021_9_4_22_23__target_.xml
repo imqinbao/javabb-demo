@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_9_4_22_23_[target]" date="1630765418767" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_9_4_22_23_[target]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/9/4 22:23 [target]" />
+  <binary>
+    <option name="BEFORE_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/test/TestRequest.class" />
+    <option name="AFTER_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/test/TestRequest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_9_4_22_23_[target]/TestRequest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/config/ActiveMqConfig.class" />
+    <option name="AFTER_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/config/ActiveMqConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_9_4_22_23_[target]/ActiveMqConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/quene/DataStoreQueue.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/META-INF/javabb-demo-mq-activemq.kotlin_module" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="javabb-demo-mq/javabb-demo-mq-activemq/target/classes/cn/javabb/mq/activemq/boot/quene/DataStoreQueue$QueueType.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
