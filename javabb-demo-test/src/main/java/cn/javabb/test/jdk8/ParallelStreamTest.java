@@ -1,6 +1,6 @@
-package cn.javabb.jdk8;
+package cn.javabb.test.jdk8;
 
-import cn.javabb.model.Person;
+import cn.javabb.test.model.Person;
 import org.junit.Test;
 
 import java.util.ArrayList;

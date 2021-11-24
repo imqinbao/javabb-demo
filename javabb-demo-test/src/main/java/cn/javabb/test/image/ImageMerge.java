@@ -1,4 +1,4 @@
-package cn.javabb.image;
+package cn.javabb.test.image;
 
 import net.coobird.thumbnailator.Thumbnailator;
 

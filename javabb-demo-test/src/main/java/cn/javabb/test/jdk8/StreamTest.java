@@ -1,4 +1,4 @@
-package cn.javabb.jdk8;
+package cn.javabb.test.jdk8;
 
 import org.junit.Test;
 

@@ -18,6 +18,7 @@
         <module>javabb-demo-sharding-jdbc</module>
         <module>javabb-demo-threadpool</module>
         <module>javabb-demo-docker</module>
+        <module>javabb-demo-ddd</module>
     </modules>
 
     <packaging>pom</packaging>

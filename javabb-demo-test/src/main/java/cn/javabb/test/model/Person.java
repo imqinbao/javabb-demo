@@ -1,4 +1,4 @@
-package cn.javabb.model;
+package cn.javabb.test.model;
 
 import lombok.Data;
 
