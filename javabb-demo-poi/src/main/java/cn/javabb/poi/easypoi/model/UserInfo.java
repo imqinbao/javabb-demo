@@ -24,4 +24,10 @@ public class UserInfo implements Serializable {
     //头像
     @Excel(name = "头像",orderNum = "5", width = 25)
     private String avatar;
+    //小学
+    @Excel(name = "小学",orderNum = "6", width = 25,groupName = "学习经历")
+    private String xiaoxue;
+    //初中
+    @Excel(name = "初中",orderNum = "7", width = 25,groupName = "学习经历")
+    private String chuzhong;
 }

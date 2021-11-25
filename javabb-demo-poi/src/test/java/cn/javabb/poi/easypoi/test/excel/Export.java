@@ -35,12 +35,16 @@ public class Export {
         user1.setUserName("张三");
         user1.setAddress("湖北武汉");
         user1.setBirthday(new Date());
+        user1.setXiaoxue("武汉第一小学");
+        user1.setChuzhong("武汉三中");
 
         UserInfo user2 = new UserInfo();
         user2.setId(1L);
         user2.setUserName("李四");
         user2.setAddress("北京大兴");
         user2.setBirthday(new Date());
+        user2.setXiaoxue("北京第一小学");
+        user2.setChuzhong("北京100中");
         ArrayList<UserInfo> list = CollUtil.newArrayList(user1, user2);
         Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("用户列表", "用户列表"),
                 UserInfo.class, list);
