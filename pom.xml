@@ -19,6 +19,7 @@
         <module>javabb-demo-threadpool</module>
         <module>javabb-demo-docker</module>
         <module>javabb-demo-ddd</module>
+        <module>javabb-demo-design-parttern</module>
     </modules>
 
     <packaging>pom</packaging>
