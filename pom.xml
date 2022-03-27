@@ -20,6 +20,7 @@
         <module>javabb-demo-docker</module>
         <module>javabb-demo-ddd</module>
         <module>javabb-demo-design-parttern</module>
+        <module>javabb-demo-concurrent</module>
     </modules>
 
     <packaging>pom</packaging>
