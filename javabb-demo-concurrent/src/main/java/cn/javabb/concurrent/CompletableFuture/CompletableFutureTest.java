@@ -1,7 +1,9 @@
 package cn.javabb.concurrent.CompletableFuture;
 
 import cn.hutool.core.date.DateUtil;
+import cn.javabb.concurrent.threadpool.ThreadUtil;
 import org.junit.Test;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.*;
 
@@ -183,6 +185,7 @@ public class CompletableFutureTest {
     @Test
     public void test6() throws Exception {
         ForkJoinPool pool=new ForkJoinPool();
+        ThreadPoolTaskExecutor taskExecutor = ThreadUtil.newThreadPool(5);
         // 创建异步执行任务:
         CompletableFuture<Double> cf = CompletableFuture.supplyAsync(()->{
             System.out.println(Thread.currentThread()+" start job1,time->"+DateUtil.now());
@@ -192,7 +195,7 @@ public class CompletableFutureTest {
             }
             System.out.println(Thread.currentThread()+" exit job1,time->"+DateUtil.now());
             return 1.2;
-        },pool);
+        },taskExecutor);
         //cf关联的异步任务的返回值作为方法入参，传入到thenApply的方法中
         CompletableFuture cf2=cf.thenApply((result)->{
             System.out.println(Thread.currentThread()+" start job2,time->"+DateUtil.now());
