@@ -1,0 +1,10 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: javabb-demo-xxl-job
+xxl:
+  job:
+    admin:
+      address: http://localhost:8080/xxl-job-admin
+    accessToken: javabb-demo
