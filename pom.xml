@@ -22,6 +22,10 @@
         <module>javabb-demo-design-parttern</module>
         <module>javabb-demo-concurrent</module>
         <module>javabb-demo-task</module>
+        <module>javabb-demo-mybatisplus</module>
+        <module>javabb-demo-security</module>
+        <module>javabb-demo-admin</module>
+        <module>javabb-demo-codegen</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -41,7 +45,7 @@
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <swagger.core.version>1.5.21</swagger.core.version>
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
-        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <mybatis-plus.version>3.4.3</mybatis-plus.version>
         <dynamic-ds.version>3.2.1</dynamic-ds.version>
         <druid.version>1.1.9</druid.version>
         <mysql.version>8.0.21</mysql.version>
@@ -96,23 +100,6 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
-            <!-- Swagger 依赖配置 -->
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-models</artifactId>
-                <version>${swagger.core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger.core.version}</version>
-            </dependency>
-            <!-- Swagger-bootstrap-ui  -->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>swagger-bootstrap-ui</artifactId>
-                <version>${swagger-bootstrap-ui.version}</version>
-            </dependency>
             <!--    mysql   -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -143,13 +130,6 @@
                 <artifactId>commons-io</artifactId>
                 <version>${common-io.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>cn.javabb</groupId>
-                <artifactId>javabb-demo-swagger</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
     <!--表示子项目继承的依赖-->
