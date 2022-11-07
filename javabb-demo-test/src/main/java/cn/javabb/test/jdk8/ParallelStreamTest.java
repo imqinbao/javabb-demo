@@ -1,5 +1,8 @@
 package cn.javabb.test.jdk8;
 
+import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.RandomUtil;
+import cn.javabb.common.util.NameUtil;
 import cn.javabb.test.model.Person;
 import org.junit.Test;
 
@@ -68,7 +71,7 @@ public class ParallelStreamTest {
 
         List<Person> persons = new ArrayList<Person>();
         for (int i = 0; i < 5; i++) {
-            Person p = new Person(i, "name" + i, "sex" + i, i);
+            Person p = new Person(IdUtil.fastUUID(), NameUtil.autoName(), 1, RandomUtil.randomDouble());
             persons.add(p);
         }
         return persons;

@@ -1,6 +1,8 @@
 package cn.javabb.common.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -10,6 +12,8 @@ import java.util.Date;
  * @create: 2021/09/03 22:42
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserInfo {
 
     private String id;
